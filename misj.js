@@ -16,8 +16,12 @@ function Insertar_registro()
     //evento click en el boton #btn_register
     $(document).on("click",'#btn_register', function() 
     {
-        var User = $(#UserName).val();
-        var Email = $(#UserEmail).val();
+        var User = $('#nombre').val();
+        var Apellido = $('#apeliido').val();
+        var Email = $('#email').val();
+        var Password= $('#password').val();
+        var Fechadenacimiento = $('#fecha').val();
+
     
         //validacion por frontend
         if(User == "" || Email=="")
